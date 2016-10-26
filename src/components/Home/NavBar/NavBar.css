@@ -1,5 +1,6 @@
+
 /*/////////////////////////////////
-// MOBILE NAV BAR
+// MOBILE NAV BAR DISPLAYED WITH UNDER 768PX
 ///////////////////////////////////*/
 
 .navbar-mobile {
@@ -13,25 +14,84 @@
 .navbar-mobile span {
     width: 45%;
     padding-left: 20px;
-    transition: all .2s ease;
+    transition: all .3s ease;
 }
 
 .navbar-mobile img {
     width: 42px;
 }
 
-/*///////////////////////////////////*/
 
+/*////////////////////////////////////
+// ON HOVER DROPDOWN NAVBAR MENU
+///////////////////////////////////*/
+
+.navbar-hover-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    background: white;
+    border-top: 1px solid #d8dce6;
+    font-size: 1.85rem;
+    font-weight: 300;
+    box-shadow: 1px 3px 4px rgba(0,0,0,0.3);
+    z-index: 5;
+    transition: top .3s ease;
+}
+
+.navbar-hover-container-active {
+    top: 80px;
+}
+
+.navbar-hover-options {
+    padding: 5px 15px;
+    border-right: 1px solid #d8dce6;
+    transition: all .2s ease;
+}
+
+.navbar-hover-options:hover {
+    cursor: pointer;
+    color: #ff00bf;
+}
+
+.border-hide {
+    border: none;
+}
+
+
+
+/*////////////////////////////////////
+// MAIN NAVBAR
+/////////////////////////////////////*/
 
 .navbar-container {
     display: none;
     position: fixed;
     width: 100%;
     color: #F3F3F5;
-    font-size: 1.85rem;*/
+    font-size: 1.85rem;
     align-items: center;
     height: 80px;
     font-weight: 300;
+    z-index: 10;
+}
+
+.navbar-active {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    font-size: 1.85rem;
+    align-items: center;
+    height: 80px;
+    font-weight: 300;
+    color: #333;
+    background: #fff;
+    z-index: 10;
 }
 
 .navbar-right,
@@ -43,35 +103,67 @@
 
 .navbar-right {
     justify-content: flex-end;
+    transition: all .3s ease;
+}
+
+.navbar-right-active {
+    width: 38%;
 }
 
 .navbar-logo {
+    display: block;
     width: 75px;
     padding-left: 20px;
     margin-right: 40px;
 }
 
-.navbar-logo img {
+.navbar-logo2 {
+    display: none;
+    width: 75px;
+    padding-left: 20px;
+    margin-right: 40px;
+}
+
+.navbar-logo-hide {
+    display: none;
+}
+
+.navbar-logo-show {
+    display: block;
+}
+
+.navbar-logo img,
+.navbar-logo2 img {
     width: 60px;
-    color: #fff;
 }
 
 .navbar-list {
     padding: 0;
     list-style-type: none;
     margin: 0;
-
 }
 
 .navbar-list li {
     margin-right: 25px;
     display: inline-block;
+    transition: all .2s ease;
+}
+
+.navbar-list li:hover {
+    color: #ff00bf;
+    cursor: pointer;
 }
 
 .carrot {
     top: 1px;
     margin-left: 2px;
     font-size: 12px;
+    transition: all .2s ease;
+}
+
+.carrot-active {
+    color: #ff00bf;
+    transform: rotate(180deg);
 }
 
 .navbar-ride-lyft {
@@ -80,12 +172,54 @@
     padding: 7px 15px;
     margin-right: 30px;
     letter-spacing: 2px;
-    transition: all .2s ease;
+}
+
+.navbar-ride-lyft:hover {
+    background: rgba(255,255,255, 0.3);
+    cursor: pointer;
+}
+
+.navbar-ride-lyft-active {
+    border-color: #333;
+}
+
+.navbar-ride-lyft-active:hover {
+    border-color: #ff00bf;
+    color: #ff00bf;
 }
 
 .navbar-login {
     margin-right: 20px;
 }
+
+.navbar-login:hover {
+    cursor: pointer;
+    color: #ff00bf;
+}
+
+.navbar-signup {
+    position: absolute;
+    top: auto;
+    right: -125px;
+    color: #ff00bf;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.navbar-signup:hover {
+    cursor: pointer;
+}
+
+.navbar-signup-active {
+    right: 0px;
+    margin-right: 3%;
+}
+
+
+
+/*/////////////////////////////
+// MEDIA QUERIES
+//////////////////////////////*/
 
 @media (min-width: 550px) {
     .navbar-mobile span {
@@ -120,5 +254,13 @@
     .navbar-logo {
         padding-left: 30px;
         margin-right: 50px;
+    }
+
+    .navbar-signup-active {
+        margin-right: 4%;
+    }
+
+    .navbar-right-active {
+        width: 40%;
     }
 }

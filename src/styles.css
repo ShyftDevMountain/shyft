@@ -8,6 +8,8 @@ HOT PINK: #ff00bf;
 DARK PURPLE: #352384;
 CHARCOAL: #333447;
 BONE: #F3F3F5;
+BASE BLACK: #333;
+BASE GREY: #d8dce6;
 */
 
 
@@ -15,6 +17,7 @@ BONE: #F3F3F5;
 body {
   font-family: 'Monserrat', sans-serif;
   font-size: 16px;
+  color: #333;
 }
 
 .btn {
