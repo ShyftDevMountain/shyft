@@ -5,3 +5,4 @@ export function getFb() {
   .then(res => res.data);
   console.log(data);
 }
+console.log();
