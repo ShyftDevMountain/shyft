@@ -1,3 +1,5 @@
+
+
 .editinfo-modal {
     position: fixed;
     width: 100%;
@@ -15,6 +17,18 @@
     height: 500px;
     background: #fff;
     width: 80%;
+    padding-top: 10px;
+}
+
+.editinfo-logo-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.editinfo-logo {
+    width: 80px;
+    transition: all .2s ease;
 }
 
 .editinfo-update-content {
@@ -30,4 +44,32 @@
     padding: 10px;
     border-radius: 7px;
     border: 1px solid lightgray;
+    width: 100%;
+}
+
+.editinfo-update-btn-container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.editinfo-update-btn {
+    width: 100%;
+    background: none;
+    border: 1px solid #ff00bf;
+    color: #ff00bf;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 20px;
+    transition: all .2s ease;
+}
+
+@media (min-width: 550px){
+    .editinfo-update-btn {
+        width: 250px;
+    }
+
+    .editinfo-logo {
+        width: 100px;
+    }
 }

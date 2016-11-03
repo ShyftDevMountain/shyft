@@ -1,12 +1,14 @@
 
 .userdash-icons {
-    font-size: 26px;
+    font-size: 32px;
     margin-right: 10px;
+    margin-left: 2px;
 }
 
 .userdash-icons-title {
-    font-size: 3rem;
+    font-size: 3.25rem;
     margin-right: 10px;
+    vertical-align: text-top;
 }
 
 .userdash-icons-google {
@@ -39,8 +41,7 @@
 }
 
 .userdash-user-pic-container {
-    margin: 15px 0 25px;
-    /* border: 1px solid #ff00bf; */
+    margin: 45px 0 25px;
     box-shadow: 1px 1px 5px gray;
     background: white;
     padding: 10px;
@@ -81,7 +82,7 @@
 
 .userdash-user-container {
     width: 100%;
-    padding: 50px 0;
+    padding: 60px 0;
     border: 1px solid #f2f2f2;
 }
 
@@ -103,11 +104,11 @@
 }
 
 .userdash-icon-box {
-    width: 35px;
+    width: 50px;
 }
 
 .userdash-user-info {
-    padding: 10px 10px;
+    padding: 20px 10px;
     width: 100%;
     border: 1px solid #f2f2f2;
     background-color: white;
@@ -174,7 +175,7 @@
 @media (min-width:768px){
 
     .userdash-icons-title {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     .userdash-sideanduser-container {
@@ -190,16 +191,13 @@
 
     .userdash-user-container {
         width: 100%;
-        padding-top: 100px;
+        padding: 110px 0 80px;
+
     }
 
     .userdash-user-title {
         font-size: 4rem;
     }
-
-    /*.userdash-request-btn {
-        width: 180px;
-    }*/
 
     .userdash-user-ridesrequest-box {
         display: flex;
